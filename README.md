@@ -1,6 +1,8 @@
 # Computational_Science_2026
 
-### Fiirst Example: Area of an Ellipse
+## Outputs
+
+### First Example: Area of an Ellipse
 ![alt text](image.png)
 ![alt text](image-1.png)
 
