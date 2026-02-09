@@ -69,6 +69,8 @@ for i in range(len(labels) - 1):
     diff = abs(areas_truncated[labels[i]] - areas_truncated[labels[i+1]])
     print(f"Gap between {labels[i]} and {labels[i+1]}: {diff.normalize()}")
 
+#============================================================================
+
 print("\nDifferences between rounded and truncated precisions:")
 labels = list(areas_truncated.keys())
 for i in range(len(labels) - 1):
@@ -214,6 +216,8 @@ for i in range(len(labels) - 1):
     diff = abs(formula_truncated[labels[i]] - formula_truncated[labels[i+1]])
     print(f"Gap between {labels[i]} and {labels[i+1]}: {diff.normalize()}")
 
+#=============================================================================
+
 print("\nDifferences between rounded and truncated precisions:")
 labels = list(formula_truncated.keys())
 for i in range(len(labels) - 1):
@@ -286,6 +290,14 @@ print("\n=== Truncated Results ===")
 for label, volume in volumes_truncated.items():
     # normalize to remove trailing zeros
     print(f"Using {label} of pi (truncated): Volume = {volume.normalize()}")
+
+print("\nDifferences between truncated precisions:")
+labels = list(volumes_truncated.keys())
+for i in range(len(labels) - 1):
+    diff = abs(volumes_truncated[labels[i]] - volumes_truncated[labels[i+1]])
+    print(f"Gap between {labels[i]} and {labels[i+1]}: {diff.normalize()}")
+
+#============================================================================
 
 print("\nDifferences between rounded and truncated precisions:")
 labels = list(volumes_truncated.keys())
