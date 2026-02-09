@@ -73,9 +73,10 @@ for i in range(len(labels) - 1):
 
 print("\nDifferences between rounded and truncated precisions:")
 labels = list(areas_truncated.keys())
-for i in range(len(labels) - 1):
-    diff = abs(areas_rounded[labels[i]] - areas_truncated[labels[i]])
-    print(f"Gap between rounded {labels[i]} and truncated {labels[i]}: {diff.normalize()}")
+for label in labels:
+    diff = abs(areas_rounded[label] - areas_truncated[label])
+    print(f"Gap between rounded {label} and truncated {label}: {diff.normalize()}")
+
 
 #===============================================================================with graphics
 from decimal import Decimal, getcontext
@@ -220,9 +221,9 @@ for i in range(len(labels) - 1):
 
 print("\nDifferences between rounded and truncated precisions:")
 labels = list(formula_truncated.keys())
-for i in range(len(labels) - 1):
-    diff = abs(formula_rounded[labels[i]] - formula_truncated[labels[i+1]])
-    print(f"Gap between {labels[i]} and {labels[i+1]}: {diff.normalize()}")
+for label in labels:
+    diff = abs(formula_rounded[label] - formula_truncated[label])
+    print(f"Gap between rounded {label} and truncated {label}: {diff.normalize()}")
 
 #============================================================================
 #============================================================================
@@ -301,9 +302,9 @@ for i in range(len(labels) - 1):
 
 print("\nDifferences between rounded and truncated precisions:")
 labels = list(volumes_truncated.keys())
-for i in range(len(labels) - 1):
-    diff = abs(volumes_rounded[labels[i]] - volumes_truncated[labels[i]])
-    print(f"Gap between {labels[i]} and {labels[i+1]}: {diff.normalize()}")
+for label in labels:
+    diff = abs(volumes_rounded[label] - volumes_truncated[label])
+    print(f"Gap between rounded {label} and truncated {label}: {diff.normalize()}")
 
 # #============================================================================
 # #============================================================================
