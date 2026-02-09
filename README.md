@@ -10,4 +10,4 @@
 ![alt text](/Screenshots_Outputs/image-2.png)
 
 ### Third Example: Volume of a Sphere
-![alt text](image.png)
+![alt text](/Screenshots_Outputs/image.png)
