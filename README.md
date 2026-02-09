@@ -3,11 +3,11 @@
 ## Outputs
 
 ### First Example: Area of an Ellipse
-![alt text](image.png)
-![alt text](image-1.png)
+![alt text](/Screenshots_Outputs/image.png)
+![alt text](/Screenshots_Outputs/image-1.png)
 
 ### Second Example: Formula with pi
-![alt text](image-2.png)
+![alt text](/Screenshots_Outputs/image-2.png)
 
 ### Third Example: Volume of a Sphere
-![alt text](image-3.png)
+![alt text](/Screenshots_Outputs/image-3.png)
