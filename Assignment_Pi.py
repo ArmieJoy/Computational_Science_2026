@@ -208,7 +208,7 @@ formula_truncated = {label: formula( pi_val) for label, pi_val in pi_precisions_
 print("\n=== Truncated Results ===")
 for label, answer in formula_truncated.items():
     # normalize to remove trailing zeros
-    print(f"Using {label} of pi (truncated): Surface Area = {answer.normalize()}")
+    print(f"Using {label} of pi (truncated): Answer = {answer.normalize()}")
 
 print("\nDifferences between truncated precisions:")
 labels = list(formula_truncated.keys())
